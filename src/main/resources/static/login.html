@@ -27,36 +27,35 @@
             <br>
         <form class="row g-3">
             <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="text" class="form-control" id="inputEmail4" placeholder="Tus Email">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="Tu Email">
             </div>
             <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Tu contraseña">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Tu Nombre">
             </div>
 
             <div class="col-12">
-                <label for="inputSur" class="form-label">Apellidos</label>
+                <label for="inputSur" class="form-label">SurName</label>
                 <input type="text" class="form-control" id="inputSur" placeholder="Tus Apellidos">
             </div>
                 <div class="col">
-                    <label for="inputState" class="form-label">Ciudad</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Elige...</option>
-                        <option>Madrid</option>
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <select id="inputCity" class="form-select">
+                        <option selected>Madrid</option>
                         <option>Barcelona</option>
                         <option>Bilbao</option>
                         <option>Otra</option>
                     </select>
                 </div>
                 <div class="col">
-                    <label for="inputAge" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="inputAge">
+                    <label for="inputDob" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="inputDob">
                 </div>
             <div class="col-12">
 
-                <div  class="form-check">
-                    <input align="center" class="form-check-input" type="checkbox" id="gridCheck">
+                <div  align = center, class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required="true">
                     <label class="form-check-label" for="gridCheck">
                         Acepto las condiciones de FREAKS
                     </label>
@@ -85,4 +84,6 @@
             </div>
         </footer>
     </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/Validation.js"></script>
 </html>
