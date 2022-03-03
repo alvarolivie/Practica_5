@@ -1,11 +1,10 @@
 package PAT.Practica_5;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -20,9 +19,11 @@ public class Practica5Controller {
     }
 
     @PostMapping("/Practica5/add")
-    public User addUser(@RequestBody User user){
-        return practica5Services.addUser(user);
+    public User addUser(@Valid @RequestBody User user) throws IOException {
+           return practica5Services.addUser(user);
+
     }
+
 
     @GetMapping("/Practica5")
     public ArrayList<User> getUsers(){

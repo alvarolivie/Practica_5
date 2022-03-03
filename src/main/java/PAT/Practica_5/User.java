@@ -1,14 +1,30 @@
 package PAT.Practica_5;
 
+import javax.validation.constraints.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 public class User {
+
     private int id;
+
+    @NotBlank
+    @Email
+    @Min(3)
+    @Max(20)
     private String email;
+
+    @NotBlank
+    @Min(3)
+    @Max(20)
     private String name;
+
+    @NotBlank
+    @Min(3)
+    @Max(50)
     private String surname;
+
     private LocalDate dob;
+
     private Cities city;
 
     public User(){
