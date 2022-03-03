@@ -1,11 +1,22 @@
 const SendData= async () => {
-    let data = [$("inputEmail").html,
-                $("inputName").html,
-                $("inputSur").html,
-                $("inputCity").html,
-                $("inputDOb").html];
-    fetch("/Practica5/add", {
-        method: "POST",
-        body: JSON.stringify(data),
-    });
+    let email = $("#inputEmail").val();
+    let name =$("#inputName").val();
+    let sur = $("#inputSur").val();
+    let city = $("#inputCity").val().toUpperCase();
+    let date = $("#inputDob").val();
+    fetch("Practica5/add", {
+                       method: "POST",
+                       headers: new Headers({
+                           "content-Type" : "application/json"
+                           }
+                       ),
+                       body: {
+                           "email": email,
+                           "name" : name,
+                           "surname" : sur,
+                           "city" : city,
+                           "date" : date
+                       }
+                    });
+
 }

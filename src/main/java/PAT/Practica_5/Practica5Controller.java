@@ -1,6 +1,7 @@
 package PAT.Practica_5;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +22,11 @@ public class Practica5Controller {
     @PostMapping("/Practica5/add")
     public User addUser(@RequestBody User user){
         return practica5Services.addUser(user);
+    }
+
+    @GetMapping("/Practica5")
+    public ArrayList<User> getUsers(){
+        return practica5Services.getUsers();
     }
 }
 

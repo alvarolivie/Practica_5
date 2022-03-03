@@ -23,10 +23,11 @@ public class User {
         this.city = city;
     }
 
-    public User(String email, String name, String surname) {
+    public User(String email, String name, String surname, Cities city) {
         this.email = email;
         this.name = name;
         this.surname = surname;
+        this.city = city;
     }
 
     public User(int id, String email, String name, String surname, LocalDate dob, Cities city) {
