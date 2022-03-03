@@ -19,8 +19,9 @@ public class Practica5Controller {
     }
 
     @PostMapping("/Practica5/add")
-    public User addUser(@Valid @RequestBody User user) throws IOException {
-           return practica5Services.addUser(user);
+    public String addUser(@Valid @RequestBody User user){
+           practica5Services.addUser(user);
+           return "Los datos han sido guardados";
 
     }
 

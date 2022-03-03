@@ -9,18 +9,14 @@ public class User {
 
     @NotBlank
     @Email
-    @Min(3)
-    @Max(20)
     private String email;
 
     @NotBlank
-    @Min(3)
-    @Max(20)
+    @Size(min = 3, max = 20)
     private String name;
 
     @NotBlank
-    @Min(3)
-    @Max(50)
+    @Size(min = 3, max = 40)
     private String surname;
 
     private LocalDate dob;
