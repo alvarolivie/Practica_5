@@ -1,10 +1,4 @@
 const SendData= async () => {
-        let iemail = $("#inputEmail").val();
-        let iname =$("#inputName").val();
-        let isur = $("#inputSur").val();
-        let icity = $("#inputCity").val().toUpperCase();
-        let idate = $("#inputDob").val();
-
         fetch("Practica5/add", {
                            method: "POST",
                            headers: {
@@ -12,11 +6,11 @@ const SendData= async () => {
                                "Accept" : "application/json"
                            },
                            body: JSON.stringify({
-                               email: iemail,
-                               name : iname,
-                               surname : isur,
-                               city : icity,
-                               dob : idate
+                               email: $("#inputEmail").val(),
+                               name : $("#inputName").val(),
+                               surname : $("#inputSur").val(),
+                               city : $("#inputCity").val().toUpperCase(),
+                               dob : $("#inputDob").val()
                            })
         }).then(res => {
             if(res.ok) {
