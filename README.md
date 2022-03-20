@@ -2,13 +2,13 @@
 ## Guia
 
 ### Front-end:
-Paginas
+Paginas:
 - La primera pagina, index.html, es la pagina principal.
 - La pagina login.html es un formulario que pide la informacion necesaria para contactar al cliente.
 - La pagina information.html contiene la historia de la marca.
 - La ultima pagina, others.html, contiene links en forma de imagenes a las diferentes paginas de inditex.
 
-Navegación
+Navegación:
 Hay una barra de navegación en la parte superior para cambiar de paginas y tambien se puede usar el logo FREAKS para volver a la pagina principal.
 
 Javascript
